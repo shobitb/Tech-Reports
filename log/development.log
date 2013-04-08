@@ -1,0 +1,1041 @@
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (141.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (107.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTechReports (20130408193108)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE TABLE "tech_reports" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "abstract" text, "authors" text, "date" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20130408193108')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("tech_reports")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTechReports (20130408193108)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tech_reports")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (137.8ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (115.2ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTechReports (20130408193108)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "tech_reports" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "abstract" text, "authors" text, "date" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("tech_reports")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSQLite3::SQLException: table tech_reports has no column named tr: CREATE INDEX "index_tech_reports_on_tr" ON "tech_reports" ("tr")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (130.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (107.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTechReports (20130408193108)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "tech_reports" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "abstract" text, "authors" text, "date" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("tech_reports")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSQLite3::SQLException: table tech_reports has no column named tr: CREATE INDEX "index_tech_reports_on_tr" ON "tech_reports" ("tr")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTechReports (20130408193108)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "tech_reports" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "abstract" text, "authors" text, "date" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20130408193108')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("tech_reports")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTechReports (20130408193108)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tech_reports")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTechReports (20130408193108)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tech_reports")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (144.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (116.6ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTechReports (20130408193108)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "tech_reports" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "abstract" text, "authors" text, "date" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("tech_reports")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSQLite3::SQLException: table tech_reports has no column named tr: CREATE INDEX "index_tech_reports_on_tr" ON "tech_reports" ("tr")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTechReports (20130408193108)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "tech_reports" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "abstract" text, "authors" text, "date" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20130408193108')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("tech_reports")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTechReports (20130408193108)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tech_reports")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTechReports (20130408193108)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mDROP TABLE "tech_reports"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20130408193108'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTechReports (20130408193108)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE TABLE "tech_reports" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "abstract" text, "authors" text, "date" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tech_reports")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSQLite3::SQLException: table tech_reports has no column named tr: CREATE INDEX "index_tech_reports_on_tr" ON "tech_reports" ("tr")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTechReports (20130408193108)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE TABLE "tech_reports" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "abstract" text, "authors" text, "date" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20130408193108')[0m
+Migrating to AddIndexToTechReports (20130408200328)
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("tech_reports")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: table tech_reports has no column named tr: CREATE INDEX "index_tech_reports_on_tr" ON "tech_reports" ("tr")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTechReports (20130408200552)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSQLite3::SQLException: table "tech_reports" already exists: CREATE TABLE "tech_reports" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "abstract" text, "authors" text, "date" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tech_reports")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTechReports (20130408200552)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSQLite3::SQLException: table "tech_reports" already exists: CREATE TABLE "tech_reports" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "abstract" text, "authors" text, "date" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (147.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (107.1ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTechReports (20130408200552)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "tech_reports" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "abstract" text, "authors" text, "date" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("tech_reports")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE INDEX "index_tech_reports_on_date" ON "tech_reports" ("date")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("tech_reports")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_tech_reports_on_date')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: table tech_reports has no column named tr: CREATE INDEX "index_tech_reports_on_tr" ON "tech_reports" ("tr")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTechReports (20130408200552)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "tech_reports" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "abstract" text, "authors" text, "date" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20130408200552')[0m
+Migrating to AddIndexToTechReports (20130408201408)
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("tech_reports")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE INDEX "index_tech_reports_on_date" ON "tech_reports" ("date")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("tech_reports")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_tech_reports_on_date')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSQLite3::SQLException: table tech_reports has no column named tr: CREATE INDEX "index_tech_reports_on_tr" ON "tech_reports" ("tr")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTechReports (20130408201928)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSQLite3::SQLException: table "tech_reports" already exists: CREATE TABLE "tech_reports" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tr" integer, "title" varchar(255), "abstract" text, "authors" text, "date" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tech_reports")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTechReports (20130408201928)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSQLite3::SQLException: table "tech_reports" already exists: CREATE TABLE "tech_reports" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tr" integer, "title" varchar(255), "abstract" text, "authors" text, "date" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (184.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (148.6ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTechReports (20130408201928)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "tech_reports" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tr" integer, "title" varchar(255), "abstract" text, "authors" text, "date" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("tech_reports")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE INDEX "index_tech_reports_on_date" ON "tech_reports" ("date")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("tech_reports")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_tech_reports_on_date')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE INDEX "index_tech_reports_on_tr" ON "tech_reports" ("tr")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20130408201928')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("tech_reports")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_tech_reports_on_tr')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_tech_reports_on_date')[0m
+
+
+Processing TechReportsController#index (for 127.0.0.1 at 2013-04-08 16:36:31) [GET]
+  [4;36;1mTechReport Load (0.3ms)[0m   [0;1mSELECT * FROM "tech_reports" [0m
+Rendering template within layouts/tech_reports
+Rendering tech_reports/index
+Completed in 32ms (View: 29, DB: 0) | 200 OK [http://localhost/tech_reports]
+
+
+Processing TechReportsController#new (for 127.0.0.1 at 2013-04-08 16:36:33) [GET]
+Rendering template within layouts/tech_reports
+Rendering tech_reports/new
+Completed in 37ms (View: 33, DB: 0) | 200 OK [http://localhost/tech_reports/new]
+
+
+Processing TechReportsController#index (for 127.0.0.1 at 2013-04-08 16:39:25) [GET]
+  [4;35;1mTechReport Load (0.5ms)[0m   [0mSELECT * FROM "tech_reports" [0m
+Rendering template within layouts/tech_reports
+Rendering tech_reports/index
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/tech_reports]
+
+
+Processing TechReportsController#new (for 127.0.0.1 at 2013-04-08 16:39:27) [GET]
+Rendering template within layouts/tech_reports
+Rendering tech_reports/new
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/tech_reports/new]
+
+
+Processing TechReportsController#index (for 127.0.0.1 at 2013-04-08 16:40:07) [GET]
+  [4;36;1mTechReport Load (0.3ms)[0m   [0;1mSELECT * FROM "tech_reports" [0m
+Rendering template within layouts/tech_reports
+Rendering tech_reports/index
+Completed in 24ms (View: 22, DB: 0) | 200 OK [http://localhost/tech_reports]
+
+
+Processing TechReportsController#new (for 127.0.0.1 at 2013-04-08 16:40:41) [GET]
+Rendering template within layouts/tech_reports
+Rendering tech_reports/new
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/tech_reports/new]
+
+
+Processing TechReportsController#create (for 127.0.0.1 at 2013-04-08 16:41:05) [POST]
+  Parameters: {"authenticity_token"=>"Mv/6STCf+0EwJZLuvXkBa6IZW3gnKZAhUbVG2XiLDwk=", "tech_report"=>{"tr"=>"954", "title"=>"This is a Tech Report", "abstract"=>"Abstract:\r\nThis is an Abstract", "authors"=>"Shobit Beltangdy\r\nDaniel Tsadok", "date(1i)"=>"2013", "date(2i)"=>"4", "date(3i)"=>"8", "date(4i)"=>"20", "date(5i)"=>"40"}, "commit"=>"Create"}
+  [4;35;1mTechReport Create (0.2ms)[0m   [0mINSERT INTO "tech_reports" ("tr", "title", "abstract", "authors", "date", "created_at", "updated_at") VALUES(954, 'This is a Tech Report', 'Abstract:
+This is an Abstract', 'Shobit Beltangdy
+Daniel Tsadok', '2013-04-08 20:40:00', '2013-04-08 20:41:05', '2013-04-08 20:41:05')[0m
+Redirected to http://localhost:3000/tech_reports/1
+Completed in 394ms (DB: 0) | 302 Found [http://localhost/tech_reports]
+
+
+Processing TechReportsController#show (for 127.0.0.1 at 2013-04-08 16:41:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTechReport Load (0.1ms)[0m   [0;1mSELECT * FROM "tech_reports" WHERE ("tech_reports"."id" = 1) [0m
+Rendering template within layouts/tech_reports
+Rendering tech_reports/show
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/tech_reports/1]
+
+
+Processing TechReportsController#index (for 127.0.0.1 at 2013-04-08 16:41:09) [GET]
+  [4;35;1mTechReport Load (0.3ms)[0m   [0mSELECT * FROM "tech_reports" [0m
+Rendering template within layouts/tech_reports
+Rendering tech_reports/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/tech_reports]
+
+
+Processing TechReportsController#show (for 127.0.0.1 at 2013-04-08 16:41:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTechReport Load (0.1ms)[0m   [0;1mSELECT * FROM "tech_reports" WHERE ("tech_reports"."id" = 1) [0m
+Rendering template within layouts/tech_reports
+Rendering tech_reports/show
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/tech_reports/1]
+DEPRECATION WARNING: ActiveSupport::Dependencies.load_paths is deprecated, please use autoload_paths instead. (called from <top (required)> at /var/lib/gems/1.9.1/gems/carrierwave-0.4.10/lib/carrierwave.rb:84)
+DEPRECATION WARNING: ActiveSupport::Dependencies.load_paths is deprecated, please use autoload_paths instead. (called from <top (required)> at /var/lib/gems/1.9.1/gems/carrierwave-0.4.10/lib/carrierwave.rb:84)
+
+
+Processing TechReportsController#index (for 127.0.0.1 at 2013-04-08 16:52:38) [GET]
+
+NameError (uninitialized constant TechReport::AvatarUploader):
+  app/models/tech_report.rb:2:in `<class:TechReport>'
+  app/models/tech_report.rb:1:in `<top (required)>'
+  app/controllers/tech_reports_controller.rb:5:in `index'
+  <internal:prelude>:10:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (10.0ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: ActiveSupport::Dependencies.load_paths is deprecated, please use autoload_paths instead. (called from <top (required)> at /var/lib/gems/1.9.1/gems/carrierwave-0.4.10/lib/carrierwave.rb:84)
+
+
+Processing TechReportsController#index (for 127.0.0.1 at 2013-04-08 16:53:12) [GET]
+  [4;36;1mTechReport Load (0.4ms)[0m   [0;1mSELECT * FROM "tech_reports" [0m
+Rendering template within layouts/tech_reports
+Rendering tech_reports/index
+Completed in 64ms (View: 34, DB: 0) | 200 OK [http://localhost/tech_reports]
+
+
+Processing TechReportsController#new (for 127.0.0.1 at 2013-04-08 16:53:14) [GET]
+Rendering template within layouts/tech_reports
+Rendering tech_reports/new
+Completed in 35ms (View: 30, DB: 0) | 200 OK [http://localhost/tech_reports/new]
+
+
+Processing TechReportsController#create (for 127.0.0.1 at 2013-04-08 16:53:33) [POST]
+  Parameters: {"authenticity_token"=>"Mv/6STCf+0EwJZLuvXkBa6IZW3gnKZAhUbVG2XiLDwk=", "tech_report"=>{"tr"=>"958", "title"=>"Title Here", "abstract"=>"Abstract:\r\nHere", "authors"=>"Shobit", "date(1i)"=>"2013", "date(2i)"=>"4", "date(3i)"=>"8", "date(4i)"=>"20", "date(5i)"=>"53", "tech_report"=>"resultNumViews"}, "commit"=>"Create"}
+
+CarrierWave::FormNotMultipart (You tried to assign a String or a Pathname to an uploader, for security reasons, this is not allowed.
+
+ If this is a file upload, please check that your upload form is multipart encoded.):
+  carrierwave (0.4.10) lib/carrierwave/uploader/cache.rb:89:in `cache!'
+  carrierwave (0.4.10) lib/carrierwave/mount.rb:293:in `cache'
+  carrierwave (0.4.10) lib/carrierwave/mount.rb:172:in `tech_report='
+  carrierwave (0.4.10) lib/carrierwave/mount.rb:157:in `tech_report='
+  app/controllers/tech_reports_controller.rb:43:in `new'
+  app/controllers/tech_reports_controller.rb:43:in `create'
+  <internal:prelude>:10:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (8.6ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: ActiveSupport::Dependencies.load_paths is deprecated, please use autoload_paths instead. (called from <top (required)> at /var/lib/gems/1.9.1/gems/carrierwave-0.4.10/lib/carrierwave.rb:84)
+
+
+Processing TechReportsController#create (for 127.0.0.1 at 2013-04-08 16:54:33) [POST]
+  Parameters: {"authenticity_token"=>"Mv/6STCf+0EwJZLuvXkBa6IZW3gnKZAhUbVG2XiLDwk=", "tech_report"=>{"tr"=>"958", "title"=>"Title Here", "abstract"=>"Abstract:\r\nHere", "authors"=>"Shobit", "date(1i)"=>"2013", "date(2i)"=>"4", "date(3i)"=>"8", "date(4i)"=>"20", "date(5i)"=>"53", "tech_report"=>"resultNumViews"}, "commit"=>"Create"}
+
+CarrierWave::FormNotMultipart (You tried to assign a String or a Pathname to an uploader, for security reasons, this is not allowed.
+
+ If this is a file upload, please check that your upload form is multipart encoded.):
+  carrierwave (0.4.10) lib/carrierwave/uploader/cache.rb:89:in `cache!'
+  carrierwave (0.4.10) lib/carrierwave/mount.rb:293:in `cache'
+  carrierwave (0.4.10) lib/carrierwave/mount.rb:172:in `tech_report='
+  carrierwave (0.4.10) lib/carrierwave/mount.rb:157:in `tech_report='
+  app/controllers/tech_reports_controller.rb:43:in `new'
+  app/controllers/tech_reports_controller.rb:43:in `create'
+  <internal:prelude>:10:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (11.8ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TechReportsController#new (for 127.0.0.1 at 2013-04-08 16:54:37) [GET]
+Rendering template within layouts/tech_reports
+Rendering tech_reports/new
+ERROR: compiling _run_erb_app47views47tech_reports47new46html46erb RAISED /home/shobit/development/techreport/app/views/tech_reports/new.html.erb:3: syntax error, unexpected ',', expecting keyword_end
+;  form_for(@tech_report), :html => {:multipart => true...
+                          ^
+/home/shobit/development/techreport/app/views/tech_reports/new.html.erb:3: syntax error, unexpected keyword_do_block, expecting keyword_end
+...html => {:multipart => true} do |f| ; @output_buffer.concat ...
+...                               ^
+/home/shobit/development/techreport/app/views/tech_reports/new.html.erb:35: syntax error, unexpected keyword_ensure, expecting $end
+Function body: #coding:UTF-8
+          def _run_erb_app47views47tech_reports47new46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>New tech_report</h1>\n\n"
+
+;  form_for(@tech_report), :html => {:multipart => true} do |f| ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :tr ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :tr ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :title ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :title ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :abstract ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_area :abstract ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :authors ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_area :authors ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :date ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.datetime_select :date ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.file_field :tech_report ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.submit 'Create' ).to_s); @output_buffer.concat "\n  </p>\n"
+
+;  end ; @output_buffer.concat "\n\n"
+
+; @output_buffer.concat(( link_to 'Back', tech_reports_path ).to_s); @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_view/renderable.rb:91:in `module_eval'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_view/renderable.rb:91:in `compile!'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_view/base.rb:265:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_view/base.rb:348:in `_render_with_layout'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_view/base.rb:262:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/base.rb:1252:in `render_for_file'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/base.rb:942:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+/var/lib/gems/1.9.1/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/usr/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/var/lib/gems/1.9.1/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/mime_responds.rb:135:in `block in custom'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/mime_responds.rb:179:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/mime_responds.rb:179:in `block in respond'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/mime_responds.rb:173:in `each'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/mime_responds.rb:173:in `respond'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/shobit/development/techreport/app/controllers/tech_reports_controller.rb:29:in `new'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/base.rb:1333:in `perform_action'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+/var/lib/gems/1.9.1/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/usr/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/var/lib/gems/1.9.1/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/flash.rb:151:in `perform_action_with_flash'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/base.rb:532:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/filters.rb:606:in `process_with_filters'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/routing/route_set.rb:438:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+/var/lib/gems/1.9.1/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:29:in `block in call'
+/var/lib/gems/1.9.1/gems/activerecord-2.3.18/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/var/lib/gems/1.9.1/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:9:in `cache'
+/var/lib/gems/1.9.1/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:28:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-2.3.18/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/string_coercion.rb:25:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.1.6/lib/rack/head.rb:9:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.1.6/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/session/cookie_store.rb:99:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/failsafe.rb:26:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.1.6/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/var/lib/gems/1.9.1/gems/rack-1.1.6/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:114:in `block in call'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.9.1/gems/rails-2.3.18/lib/rails/rack/static.rb:31:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.1.6/lib/rack/urlmap.rb:47:in `block in call'
+/var/lib/gems/1.9.1/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `each'
+/var/lib/gems/1.9.1/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `call'
+/var/lib/gems/1.9.1/gems/rails-2.3.18/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.1.6/lib/rack/content_length.rb:13:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.1.6/lib/rack/handler/webrick.rb:48:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+ActionView::TemplateError (/home/shobit/development/techreport/app/views/tech_reports/new.html.erb:3: syntax error, unexpected ',', expecting keyword_end
+;  form_for(@tech_report), :html => {:multipart => true...
+                          ^
+/home/shobit/development/techreport/app/views/tech_reports/new.html.erb:3: syntax error, unexpected keyword_do_block, expecting keyword_end
+...html => {:multipart => true} do |f| ; @output_buffer.concat ...
+...                               ^
+/home/shobit/development/techreport/app/views/tech_reports/new.html.erb:35: syntax error, unexpected keyword_ensure, expecting $end) on line #3 of app/views/tech_reports/new.html.erb:
+1: <h1>New tech_report</h1>
+2: 
+3: <% form_for(@tech_report), :html => {:multipart => true} do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+
+    app/controllers/tech_reports_controller.rb:29:in `new'
+    <internal:prelude>:10:in `synchronize'
+    /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+    /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+    /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (9.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TechReportsController#new (for 127.0.0.1 at 2013-04-08 16:54:39) [GET]
+Rendering template within layouts/tech_reports
+Rendering tech_reports/new
+ERROR: compiling _run_erb_app47views47tech_reports47new46html46erb RAISED /home/shobit/development/techreport/app/views/tech_reports/new.html.erb:3: syntax error, unexpected ',', expecting keyword_end
+;  form_for(@tech_report), :html => {:multipart => true...
+                          ^
+/home/shobit/development/techreport/app/views/tech_reports/new.html.erb:3: syntax error, unexpected keyword_do_block, expecting keyword_end
+...html => {:multipart => true} do |f| ; @output_buffer.concat ...
+...                               ^
+/home/shobit/development/techreport/app/views/tech_reports/new.html.erb:35: syntax error, unexpected keyword_ensure, expecting $end
+Function body: #coding:UTF-8
+          def _run_erb_app47views47tech_reports47new46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>New tech_report</h1>\n\n"
+
+;  form_for(@tech_report), :html => {:multipart => true} do |f| ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :tr ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :tr ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :title ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :title ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :abstract ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_area :abstract ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :authors ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_area :authors ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :date ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.datetime_select :date ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.file_field :tech_report ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.submit 'Create' ).to_s); @output_buffer.concat "\n  </p>\n"
+
+;  end ; @output_buffer.concat "\n\n"
+
+; @output_buffer.concat(( link_to 'Back', tech_reports_path ).to_s); @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_view/renderable.rb:91:in `module_eval'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_view/renderable.rb:91:in `compile!'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_view/base.rb:265:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_view/base.rb:348:in `_render_with_layout'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_view/base.rb:262:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/base.rb:1252:in `render_for_file'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/base.rb:942:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+/var/lib/gems/1.9.1/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/usr/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/var/lib/gems/1.9.1/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/mime_responds.rb:135:in `block in custom'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/mime_responds.rb:179:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/mime_responds.rb:179:in `block in respond'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/mime_responds.rb:173:in `each'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/mime_responds.rb:173:in `respond'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/shobit/development/techreport/app/controllers/tech_reports_controller.rb:29:in `new'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/base.rb:1333:in `perform_action'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+/var/lib/gems/1.9.1/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/usr/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/var/lib/gems/1.9.1/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/flash.rb:151:in `perform_action_with_flash'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/base.rb:532:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/filters.rb:606:in `process_with_filters'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/routing/route_set.rb:438:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+/var/lib/gems/1.9.1/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:29:in `block in call'
+/var/lib/gems/1.9.1/gems/activerecord-2.3.18/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/var/lib/gems/1.9.1/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:9:in `cache'
+/var/lib/gems/1.9.1/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:28:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-2.3.18/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/string_coercion.rb:25:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.1.6/lib/rack/head.rb:9:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.1.6/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/session/cookie_store.rb:99:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/failsafe.rb:26:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.1.6/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/var/lib/gems/1.9.1/gems/rack-1.1.6/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:114:in `block in call'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.9.1/gems/rails-2.3.18/lib/rails/rack/static.rb:31:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.1.6/lib/rack/urlmap.rb:47:in `block in call'
+/var/lib/gems/1.9.1/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `each'
+/var/lib/gems/1.9.1/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `call'
+/var/lib/gems/1.9.1/gems/rails-2.3.18/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.1.6/lib/rack/content_length.rb:13:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.1.6/lib/rack/handler/webrick.rb:48:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+ActionView::TemplateError (/home/shobit/development/techreport/app/views/tech_reports/new.html.erb:3: syntax error, unexpected ',', expecting keyword_end
+;  form_for(@tech_report), :html => {:multipart => true...
+                          ^
+/home/shobit/development/techreport/app/views/tech_reports/new.html.erb:3: syntax error, unexpected keyword_do_block, expecting keyword_end
+...html => {:multipart => true} do |f| ; @output_buffer.concat ...
+...                               ^
+/home/shobit/development/techreport/app/views/tech_reports/new.html.erb:35: syntax error, unexpected keyword_ensure, expecting $end) on line #3 of app/views/tech_reports/new.html.erb:
+1: <h1>New tech_report</h1>
+2: 
+3: <% form_for(@tech_report), :html => {:multipart => true} do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+
+    app/controllers/tech_reports_controller.rb:29:in `new'
+    <internal:prelude>:10:in `synchronize'
+    /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+    /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+    /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (9.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: ActiveSupport::Dependencies.load_paths is deprecated, please use autoload_paths instead. (called from <top (required)> at /var/lib/gems/1.9.1/gems/carrierwave-0.4.10/lib/carrierwave.rb:84)
+
+
+Processing TechReportsController#new (for 127.0.0.1 at 2013-04-08 16:54:55) [GET]
+Rendering template within layouts/tech_reports
+Rendering tech_reports/new
+ERROR: compiling _run_erb_app47views47tech_reports47new46html46erb RAISED /home/shobit/development/techreport/app/views/tech_reports/new.html.erb:3: syntax error, unexpected ':', expecting keyword_end
+;  form_for(@tech_report) :html => {:multipart => true} ...
+                           ^
+/home/shobit/development/techreport/app/views/tech_reports/new.html.erb:3: syntax error, unexpected keyword_do_block, expecting keyword_end
+...html => {:multipart => true} do |f| ; @output_buffer.concat ...
+...                               ^
+/home/shobit/development/techreport/app/views/tech_reports/new.html.erb:35: syntax error, unexpected keyword_ensure, expecting $end
+Function body: #coding:UTF-8
+          def _run_erb_app47views47tech_reports47new46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>New tech_report</h1>\n\n"
+
+;  form_for(@tech_report) :html => {:multipart => true} do |f| ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :tr ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :tr ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :title ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :title ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :abstract ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_area :abstract ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :authors ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_area :authors ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :date ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.datetime_select :date ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.file_field :tech_report ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.submit 'Create' ).to_s); @output_buffer.concat "\n  </p>\n"
+
+;  end ; @output_buffer.concat "\n\n"
+
+; @output_buffer.concat(( link_to 'Back', tech_reports_path ).to_s); @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_view/renderable.rb:91:in `module_eval'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_view/renderable.rb:91:in `compile!'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_view/base.rb:265:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_view/base.rb:348:in `_render_with_layout'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_view/base.rb:262:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/base.rb:1252:in `render_for_file'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/base.rb:942:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+/var/lib/gems/1.9.1/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/usr/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/var/lib/gems/1.9.1/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/mime_responds.rb:135:in `block in custom'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/mime_responds.rb:179:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/mime_responds.rb:179:in `block in respond'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/mime_responds.rb:173:in `each'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/mime_responds.rb:173:in `respond'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/shobit/development/techreport/app/controllers/tech_reports_controller.rb:29:in `new'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/base.rb:1333:in `perform_action'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+/var/lib/gems/1.9.1/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/usr/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/var/lib/gems/1.9.1/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/flash.rb:151:in `perform_action_with_flash'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/base.rb:532:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/filters.rb:606:in `process_with_filters'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/routing/route_set.rb:438:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+/var/lib/gems/1.9.1/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:29:in `block in call'
+/var/lib/gems/1.9.1/gems/activerecord-2.3.18/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/var/lib/gems/1.9.1/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:9:in `cache'
+/var/lib/gems/1.9.1/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:28:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-2.3.18/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/string_coercion.rb:25:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.1.6/lib/rack/head.rb:9:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.1.6/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/session/cookie_store.rb:99:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/failsafe.rb:26:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.1.6/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/var/lib/gems/1.9.1/gems/rack-1.1.6/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:114:in `block in call'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.9.1/gems/rails-2.3.18/lib/rails/rack/static.rb:31:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.1.6/lib/rack/urlmap.rb:47:in `block in call'
+/var/lib/gems/1.9.1/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `each'
+/var/lib/gems/1.9.1/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `call'
+/var/lib/gems/1.9.1/gems/rails-2.3.18/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.1.6/lib/rack/content_length.rb:13:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.1.6/lib/rack/handler/webrick.rb:48:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+ActionView::TemplateError (/home/shobit/development/techreport/app/views/tech_reports/new.html.erb:3: syntax error, unexpected ':', expecting keyword_end
+;  form_for(@tech_report) :html => {:multipart => true} ...
+                           ^
+/home/shobit/development/techreport/app/views/tech_reports/new.html.erb:3: syntax error, unexpected keyword_do_block, expecting keyword_end
+...html => {:multipart => true} do |f| ; @output_buffer.concat ...
+...                               ^
+/home/shobit/development/techreport/app/views/tech_reports/new.html.erb:35: syntax error, unexpected keyword_ensure, expecting $end) on line #3 of app/views/tech_reports/new.html.erb:
+1: <h1>New tech_report</h1>
+2: 
+3: <% form_for(@tech_report) :html => {:multipart => true} do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+
+    app/controllers/tech_reports_controller.rb:29:in `new'
+    <internal:prelude>:10:in `synchronize'
+    /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+    /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+    /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (11.2ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: ActiveSupport::Dependencies.load_paths is deprecated, please use autoload_paths instead. (called from <top (required)> at /var/lib/gems/1.9.1/gems/carrierwave-0.4.10/lib/carrierwave.rb:84)
+
+
+Processing TechReportsController#index (for 127.0.0.1 at 2013-04-08 16:56:30) [GET]
+  [4;36;1mTechReport Load (0.4ms)[0m   [0;1mSELECT * FROM "tech_reports" [0m
+Rendering template within layouts/tech_reports
+Rendering tech_reports/index
+Completed in 65ms (View: 34, DB: 0) | 200 OK [http://localhost/tech_reports]
+
+
+Processing TechReportsController#new (for 127.0.0.1 at 2013-04-08 16:56:31) [GET]
+Rendering template within layouts/tech_reports
+Rendering tech_reports/new
+Completed in 36ms (View: 30, DB: 0) | 200 OK [http://localhost/tech_reports/new]
+
+
+Processing TechReportsController#create (for 127.0.0.1 at 2013-04-08 16:56:49) [POST]
+  Parameters: {"authenticity_token"=>"Mv/6STCf+0EwJZLuvXkBa6IZW3gnKZAhUbVG2XiLDwk=", "tech_report"=>{"tr"=>"950", "title"=>"TItle Goes Here", "abstract"=>"Abstract:\r\nGoes Here", "authors"=>"Shobit", "date(1i)"=>"2013", "date(2i)"=>"4", "date(3i)"=>"8", "date(4i)"=>"20", "date(5i)"=>"56", "tech_report"=>#<File:/tmp/RackMultipart20130408-668-132h9l4>}, "commit"=>"Create"}
+  [4;35;1mTechReport Create (0.2ms)[0m   [0mINSERT INTO "tech_reports" ("tr", "title", "abstract", "authors", "date", "created_at", "updated_at") VALUES(950, 'TItle Goes Here', 'Abstract:
+Goes Here', 'Shobit', '2013-04-08 20:56:00', '2013-04-08 20:56:49', '2013-04-08 20:56:49')[0m
+Redirected to http://localhost:3000/tech_reports/2
+Completed in 179ms (DB: 0) | 302 Found [http://localhost/tech_reports]
+
+
+Processing TechReportsController#show (for 127.0.0.1 at 2013-04-08 16:56:49) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTechReport Load (0.1ms)[0m   [0;1mSELECT * FROM "tech_reports" WHERE ("tech_reports"."id" = 2) [0m
+Rendering template within layouts/tech_reports
+Rendering tech_reports/show
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/tech_reports/2]
+
+
+Processing TechReportsController#index (for 127.0.0.1 at 2013-04-08 16:58:08) [GET]
+  [4;35;1mTechReport Load (0.3ms)[0m   [0mSELECT * FROM "tech_reports" [0m
+Rendering template within layouts/tech_reports
+Rendering tech_reports/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/tech_reports]
+
+
+Processing TechReportsController#index (for 127.0.0.1 at 2013-04-08 16:58:09) [GET]
+  [4;36;1mTechReport Load (0.7ms)[0m   [0;1mSELECT * FROM "tech_reports" [0m
+Rendering template within layouts/tech_reports
+Rendering tech_reports/index
+Completed in 17ms (View: 6, DB: 1) | 200 OK [http://localhost/tech_reports]
+
+
+Processing TechReportsController#destroy (for 127.0.0.1 at 2013-04-08 17:01:14) [DELETE]
+  Parameters: {"authenticity_token"=>"Mv/6STCf+0EwJZLuvXkBa6IZW3gnKZAhUbVG2XiLDwk=", "id"=>"1"}
+  [4;35;1mTechReport Load (0.1ms)[0m   [0mSELECT * FROM "tech_reports" WHERE ("tech_reports"."id" = 1) [0m
+  [4;36;1mTechReport Destroy (0.1ms)[0m   [0;1mDELETE FROM "tech_reports" WHERE "id" = 1[0m
+Redirected to http://localhost:3000/tech_reports
+Completed in 199ms (DB: 0) | 302 Found [http://localhost/tech_reports/1]
+
+
+Processing TechReportsController#index (for 127.0.0.1 at 2013-04-08 17:01:14) [GET]
+  [4;35;1mTechReport Load (0.3ms)[0m   [0mSELECT * FROM "tech_reports" [0m
+Rendering template within layouts/tech_reports
+Rendering tech_reports/index
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/tech_reports]
+
+
+Processing TechReportsController#destroy (for 127.0.0.1 at 2013-04-08 17:01:17) [DELETE]
+  Parameters: {"authenticity_token"=>"Mv/6STCf+0EwJZLuvXkBa6IZW3gnKZAhUbVG2XiLDwk=", "id"=>"2"}
+  [4;36;1mTechReport Load (0.1ms)[0m   [0;1mSELECT * FROM "tech_reports" WHERE ("tech_reports"."id" = 2) [0m
+  [4;35;1mTechReport Destroy (0.2ms)[0m   [0mDELETE FROM "tech_reports" WHERE "id" = 2[0m
+Redirected to http://localhost:3000/tech_reports
+Completed in 183ms (DB: 0) | 302 Found [http://localhost/tech_reports/2]
+
+
+Processing TechReportsController#index (for 127.0.0.1 at 2013-04-08 17:01:18) [GET]
+  [4;36;1mTechReport Load (0.3ms)[0m   [0;1mSELECT * FROM "tech_reports" [0m
+Rendering template within layouts/tech_reports
+Rendering tech_reports/index
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/tech_reports]

@@ -1,0 +1,32 @@
+<h1>Editing tech_report</h1>
+
+<% form_for(@tech_report) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :tr %><br />
+    <%= f.text_field :tr %>
+  </p>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :abstract %><br />
+    <%= f.text_area :abstract %>
+  </p>
+  <p>
+    <%= f.label :authors %><br />
+    <%= f.text_area :authors %>
+  </p>
+  <p>
+    <%= f.label :date %><br />
+    <%= f.datetime_select :date %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @tech_report %> |
+<%= link_to 'Back', tech_reports_path %>

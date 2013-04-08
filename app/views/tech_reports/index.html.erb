@@ -1,0 +1,28 @@
+<h1>Listing tech_reports</h1>
+
+<table border="2">
+  <tr>
+    <th>Tr</th>
+    <th>Title</th>
+    <th>Abstract</th>
+    <th>Authors</th>
+    <th>Date</th>
+  </tr>
+
+<% @tech_reports.each do |tech_report| %>
+  <tr>
+    <td><%=h tech_report.tr %></td>
+    <td><%=h tech_report.title %></td>
+    <td><%=h tech_report.abstract %></td>
+    <td><%=h tech_report.authors %></td>
+    <td><%=h tech_report.date %></td>
+    <td><%= link_to 'Show', tech_report %></td>
+    <td><%= link_to 'Edit', edit_tech_report_path(tech_report) %></td>
+    <td><%= link_to 'Destroy', tech_report, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New tech_report', new_tech_report_path %>

@@ -1,0 +1,28 @@
+<p>
+  <b>Tr:</b>
+  <%=h @tech_report.tr %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%=h @tech_report.title %>
+</p>
+
+<p>
+  <b>Abstract:</b>
+  <%=h @tech_report.abstract %>
+</p>
+
+<p>
+  <b>Authors:</b>
+  <%=h @tech_report.authors %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%=h @tech_report.date %>
+</p>
+
+
+<%= link_to 'Edit', edit_tech_report_path(@tech_report) %> |
+<%= link_to 'Back', tech_reports_path %>
